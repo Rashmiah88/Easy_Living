@@ -212,7 +212,7 @@ input {
 }
 
 .login-btn {
-  color: white;
+  color: #fff;
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -223,7 +223,7 @@ input {
 }
 
 .login-btn:hover {
-  background-color: blue; /* Hover color */
+  background-color: #4caf50; /* Hover color */
 }
 
 .login-btn:before {
