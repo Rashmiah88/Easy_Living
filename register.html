@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Easy Living-Style Meets Comfort |Easy Living</title>
+</head>
+
+<body>
+
+  <!--Navbar Section Start-->
+
+  <nav>
+    <div class="nav__header fixed-top">
+      <div class="nav__logo fixed-top">
+        <a href="#" class="logo">Easy Living</a>
+      </div>
+
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="gallary.html">Gallary</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav__auth">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+    <div class="nav__search">
+      <input type="text" class="search-input" placeholder="Search" />
+      <span class="search-icon">
+        <i class="ri-search-2-line"></i>
+      </span>
+    </div>
+  </nav>
+
+
+  <!--Navbar Section end-->
+  <div class="register-container">
+    <h2>Register Your Account</h2>
+    <form action="#" method="">
+      <div class="form-group">
+        <label for="username-register">Username:</label>
+        <input type="text" id="username-register" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email-register">Email:</label>
+        <input type="email" id="email-register" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password-register">Password:</label>
+        <input type="password" id="password-register" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button type="submit" class="bn632-hover bn24 register-btn">Register</button><br>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuBtn = document.getElementById("menu-btn");
+      const navLinks = document.getElementById("nav-links");
+
+      // Toggle menu visibility
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    });
+
+
+  </script>
+
+</body>
+
+</html>
